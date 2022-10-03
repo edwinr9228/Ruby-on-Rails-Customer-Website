@@ -33,6 +33,9 @@ group :development, :test do
   gem 'byebug', platform: :mri
 end
 
+#Use Twitter Bootstrap Library for front-end UI and layout
+gem 'bootstrap-sass', '3.3.7'
+
 group :development do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.3.13'
