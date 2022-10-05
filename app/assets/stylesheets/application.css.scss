@@ -20,7 +20,7 @@
 h1, h2, h3 {
   font-family: 'Open sans', sans-serif;
 }    
-
+// Background Gradient 
 .navbar, .home-callout {
   //Gradient provided by @_ighosh at uiGradients.com
   background: #1a2a6c;  /* fallback for old browsers */
@@ -28,28 +28,30 @@ h1, h2, h3 {
   background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+// Nav Styles
 .navbar {
   border: none;
 }
 
-.navbar-default .navbar-brand {
-  color: white;
-}
-
+// navbar color and opacity
+.navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a {
   color: white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-brand:hover {
-  color: white;
-  opacity: 0.75;
-}
-
+// CSS: Below is the way to do the above in CSS as &:hover NESTING does not work
+/* this is CSS comment format */
+.navbar-default .navbar-brand:hover, 
 .navbar-default .navbar-nav > li > a:hover {
   color: white;
   opacity: 0.75;
 }
 
+// Home Page Styles
 .home-callout {
   color: white;
   margin-top: -20px;
