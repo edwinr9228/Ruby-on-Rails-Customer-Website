@@ -51,6 +51,24 @@ h1, h2, h3 {
   }
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+/*this is how you write the code below it in sass*/
+.navbar-default .navbar-toggle {
+  border: 2.5px solid white;
+  &:hover, &:focus { 
+  background-color: #fdbb2d;
+  
+  }
+}
+/* This is html css*/
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus{
+  background-color: #fdbb2d;
+}
+
 // CSS: Below is the way to do the above in CSS as &:hover NESTING does not work
 /* this is CSS comment format */
 .navbar-default .navbar-brand:hover, 
